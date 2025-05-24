@@ -1,0 +1,1 @@
+const l=(e=globalThis.document)=>{const m=e.getElementById("count"),c=e.getElementById("increment"),r=e.getElementById("decrement");let t=0;const n=()=>{m.textContent=t},o=()=>{t++,n()},i=()=>{t--,n()};return c.addEventListener("click",o),r.addEventListener("click",i),n(),()=>{c.removeEventListener("click",o),r.removeEventListener("click",i)}};export{l as initializeCounter};
